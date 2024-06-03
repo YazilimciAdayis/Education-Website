@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+/* HEADER START */
+.header{
+    position: fixed;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    z-index: 1;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding-left: 4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: all .3s ease-in-out;
+}
+
+.navbar ul li a:hover{
+    color: orange;
+}
+
+.navbar ul button{
+   margin-left: 7rem; 
+   padding: 1rem 2.5rem;
+   background-color: transparent;
+   border: 1px solid orange;
+   border-radius: 20px;
+   cursor: pointer;
+   transition: all .3s ease-in-out;
+}
+
+.navbar ul button:hover{
+    background-color: orange;
+    color: #fff;
+    border: 1px solid orange;
+}
+
+.navbar ul .signin{
+    margin-left: 1rem;
+    background-color: orange;
+    color: #fff;
+    border: 1px solid orange;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.navbar ul .signin:hover{
+    color: orange;
+    background-color: transparent;
+}
+/* HEADER END */
+/* ABOUT START */
+.about{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/home/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-text{
+    text-align: center;
+    padding-top: 20rem;
+}
+
+.about-text h1{
+    font-size: 5rem;
+    color: #fff;
+}
+
+.about-text h1 span{
+    color: orange;
+}
+
+.about-text h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-top: 2rem;
+}
+
+.input-box{
+    background-color: #fff;
+    display: inline-block;
+    height: 4rem;
+    width: 35rem;
+    margin-left: 47rem;
+    margin-top: 5rem;
+    border-radius: 20px;
+}
+
+.input-box i{
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+}
+
+.input-box input{
+    height: 3.5rem;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.input-box button{
+    background-color: orange;
+    margin-left: 4rem;
+    width: 10rem;
+    height: 3.6rem;
+    border: 1px solid orange;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 0.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.input-box button:hover{
+    color: orange;
+    background-color: transparent;
+}
+
+/* HOME END */
+/* COURSES START */
+.courses{
+    margin-top: 15rem;
+    z-index: 0;
+}
+.courses h2{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.courses h1{
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    color: orange;
+    margin-bottom: 5rem;
+}
+
+.course{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-box{
+    margin-left: 4rem;
+    width: 30rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.course-box:hover{
+    box-shadow: 0 0 10px #000;
+}
+
+.course-box .course-desc{
+    font-size: 1.3rem;
+    color: gray;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.img-box img{
+    position: relative;
+    height: 17rem;
+    width: 30rem; 
+}
+
+.img-box .p-1{
+    position: absolute;
+    left: 35%;
+    bottom: -53%;
+    background-color: orange;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.img-box .p-2{
+    position: absolute;
+    left: 61%;
+    bottom: -53%;
+    background-color: orange;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.img-box .p-3{
+    position: absolute;
+    left: 87%;
+    bottom: -53%;
+    background-color: orange;
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.info{
+    position: relative;
+}
+
+.info img{
+    position: absolute;
+    right: 3%;
+    top: 35%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.info h2{
+    text-align: left;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    padding-left: 1rem;
+}
+
+.point{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.point p{
+    padding-left: 2rem;
+}
+
+.point p i{
+    color: orange;
+    font-size: 1.3rem;
+}
+
+.point p .i{
+    padding-left: 0.3rem;
+}
+
+.point p:nth-child(1){
+    padding-left: 0;
+}
+
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.course-info p{
+    margin-left: 5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.course-info p:nth-child(1){
+    margin-left: 0;
+}
+
+.course-info p span{
+    font-weight: 300;
+    color: gray;
+    font-size: 1.3rem;
+}
+/* COURSES END */
+/* VİDEO START */
+.video{
+    margin-top: 15rem;
+    background-color: #232530;
+    width: 100%;
+    height: 100vh;
+}
+
+.video h2{
+    padding-top: 20rem;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.video h1{
+    text-align: center;
+    padding-top: 1rem;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.video-img{
+    width: 80%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 5rem 13rem 0 13rem;
+}
+
+.video-img i{
+    margin-left: 50rem;
+    margin-top: 25rem;
+    padding: 3rem 3rem;
+    background-color: orange;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.video-img i:hover{
+    background-color: #fff;
+    color: orange;
+}
+/* VİDEO END */
+/* TEACHER START */
+.teacher{
+    margin-top: 40rem;
+}
+
+.teacher .heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.teacher h1{
+    text-align: center;
+    font-size: 4rem;
+    color: orange;
+}
+
+.teachers{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    background-color: #232530;
+    height: 50rem;
+}
+
+.teacher-box{
+    width: 37rem;
+    height: 38rem;
+    /* border: 1px solid #000; */
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.teacher-box img{
+    width: 37rem;
+    height: 21rem;
+    margin-bottom: 2rem;
+}
+
+.teacher-box h2{
+    font-size: 1.7rem;
+    padding-left: 1rem;
+}
+
+.teacher-box h3{
+    color: orange;
+    padding-left: 1rem;
+    font-weight: 300;
+}
+
+.teacher-box p{
+    padding-left: 1rem;
+    color: gray;
+    font-size: 1.3rem;
+    padding-bottom: 1.5rem;
+}
+
+.icons{
+    padding-left: 1rem;
+}
+
+.icons i{
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+}
+/* TEACHER END */
+/* EVENTS START */
+.events{
+    margin-top: 10rem;
+}
+
+.events .h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.events .h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.event{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.date-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 40rem;
+    height: 12.5rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.date-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px orange;
+}
+
+.date{
+    background-color: orange;
+    margin-right: 5rem;
+    padding: 2rem 3rem;
+}
+
+.date h2{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.date h2 span{
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+}
+
+.date h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.date-time{
+    margin-right: 2rem;
+}
+
+.date-time h1{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.date-time p{
+    color: gray;
+    font-size: 1.3rem;
+}
+
+.date-time p i{
+    color: orange;
+    padding-right: 0.3rem;
+}
+/* EVENTS END */
+/* BLOG START */
+.blog{
+    margin-top: 10rem;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.blog h2{
+    color: orange;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.blog h1{
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.comment-box{
+    margin-top: 7rem;
+}
+
+.comment-box p{
+    text-align: center;
+    color: #fff;
+    font-size: 1.3rem;
+}
+/* BLOG END */
+/* FOOTER START */
+.footer{
+    background-color: #232530;
+    margin-top: 15rem;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 5rem;
+}
+
+.head h2{
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.head h1{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.btn button{
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    color: #232530;
+    background-color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn button:hover{
+    border: 1px solid #fff;
+    background-color: #232530;
+    color: #fff;
+}
+
+.footer-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+
+.location img{
+    padding-bottom: 2rem;
+}
+
+.location h2{
+    color: orange;
+    font-weight: 300;
+    padding-top: 2rem;
+}
+
+.location p{
+    color: #fff;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.social-media{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.social-media i{
+    padding-right: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.social-media i:hover{
+    color: orange;
+}
+
+.footer-menu h2{
+    color: orange;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer-info ul{
+    padding-bottom: 5rem;
+}
+
+.footer-menu ul li{
+    padding: 1rem 15rem 1.5rem 0;
+    text-align: left;
+    list-style: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.footer-menu ul li i{
+    color: orange;
+    padding-right: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.day-time h2{
+    color: orange;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.day-time p{
+    color: gray;
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+}
+
+.day-time h3{
+    font-weight: 300;
+    color: #fff;
+    padding-bottom: 1.3rem;
+    font-size: 1.3rem;
+}
+
+.day-time h3 span{
+    padding-left: 5rem;
+}
+
+.day-time h3 .span{
+    padding-left: 7.3rem;
+}
+
+.day-time h3 .clo{
+    padding-left: 7rem;
+}
+/* FOOTER END */
